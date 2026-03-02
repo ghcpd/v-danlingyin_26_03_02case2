@@ -1,64 +1,15 @@
-You are acting as a contributor reviewing a repository.
+You're reviewing this plugin system as an outside contributor.
 
-Category: Community & collaboration  
-Sub-Type: Question  
-Focus: Asking how something works / Seeking clarification
+Take a look at `README.md`, `src/plugin.ts`, and `src/pluginManager.ts`.
 
-────────────────────────
-Context
-────────────────────────
+The docs say plugins "hook into the system lifecycle" and the system will "automatically register and execute" them — but it's not totally clear how some of that actually works in practice.
 
-You are reviewing a plugin system implementation.
+**Goal:** Identify anything in the implementation that seems ambiguous or undocumented, then write up your questions for the maintainers.
 
-You are NOT allowed to modify the code.
-You are NOT allowed to implement new features.
+Please generate a file `CLARIFICATION_REQUEST.md` in the current directory with:
+- What the code actually does (brief)
+- What's unclear or undocumented
+- Specific numbered questions for the maintainers
+- Why it matters if these stay unanswered
 
-Your task is to identify unclear behavior and ask precise clarification questions to maintainers.
-
-───────────────────────
-Your Responsibilities
-────────────────────────
-
-1. Read README.md and source files.
-2. Identify ambiguities between documentation and implementation.
-3. Identify unclear lifecycle behavior.
-4. Identify missing guarantees (ordering, error handling, async support).
-5. Formulate structured clarification questions.
-
-You MUST:
-- Ask specific technical questions.
-- Reference file names and code behavior.
-- Avoid guessing answers.
-- Avoid proposing solutions.
-- Avoid rewriting documentation.
-- Avoid modifying code.
-
-───────────────────
-Output Requirements
-───────────────────
-
-You must generate a file in the current directory:
-
-CLARIFICATION_REQUEST.md
-
-The file must contain:
-
-# Plugin System Clarification Questions
-
-## Observed Behavior
-(Summarize what the code actually does)
-
-## Ambiguities
-(List unclear areas)
-
-## Specific Questions for Maintainers
-(Numbered technical questions)
-
-## Impact of Unclear Behavior
-(Explain why clarification is needed)
-
-Do NOT respond only in chat.
-Do NOT fix anything.
-Do NOT propose implementation changes.
-
-The output file is required as evidence.
+> Note: Don't fix anything, don't propose changes — just ask questions. The file is needed as a record.

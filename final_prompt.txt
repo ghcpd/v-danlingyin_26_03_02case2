@@ -1,0 +1,64 @@
+You are acting as a contributor reviewing a repository.
+
+Category: Community & collaboration  
+Sub-Type: Question  
+Focus: Asking how something works / Seeking clarification
+
+────────────────────────
+Context
+────────────────────────
+
+You are reviewing a plugin system implementation.
+
+You are NOT allowed to modify the code.
+You are NOT allowed to implement new features.
+
+Your task is to identify unclear behavior and ask precise clarification questions to maintainers.
+
+───────────────────────
+Your Responsibilities
+────────────────────────
+
+1. Read README.md and source files.
+2. Identify ambiguities between documentation and implementation.
+3. Identify unclear lifecycle behavior.
+4. Identify missing guarantees (ordering, error handling, async support).
+5. Formulate structured clarification questions.
+
+You MUST:
+- Ask specific technical questions.
+- Reference file names and code behavior.
+- Avoid guessing answers.
+- Avoid proposing solutions.
+- Avoid rewriting documentation.
+- Avoid modifying code.
+
+───────────────────
+Output Requirements
+───────────────────
+
+You must generate a file in the current directory:
+
+CLARIFICATION_REQUEST.md
+
+The file must contain:
+
+# Plugin System Clarification Questions
+
+## Observed Behavior
+(Summarize what the code actually does)
+
+## Ambiguities
+(List unclear areas)
+
+## Specific Questions for Maintainers
+(Numbered technical questions)
+
+## Impact of Unclear Behavior
+(Explain why clarification is needed)
+
+Do NOT respond only in chat.
+Do NOT fix anything.
+Do NOT propose implementation changes.
+
+The output file is required as evidence.
